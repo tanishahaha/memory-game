@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main_container">
+    <header class="main_headings">
+      <h1>Memory Game</h1>
+    </header>
+
+    <section class="score_cont">
+      <h3>Score</h3>
+      <ul id="star_rating" class="star_rating">
+        <li class="star"><i class="fa fa-star"></i></li>
+        <li class="star"><i class="fa fa-star"></i></li>
+        <li class="star"><i class="fa fa-star"></i></li>
+      </ul>
+
+      <span class="moves_count">0</span> Moves
+
+      <div class="timer_cont">
+        <span class="timer"><i class="fa fa-hourglass-start"></i>  Timer : 00:00</span>
+      </div>
+
+      <div class="reset_game">
+        <button class="btn reset_butt">
+          Reset
+          <i class="fa fa-repeat"></i>
+        </button>
+      </div>
+    </section>
+
+    <section class="after_win">
+      <div class="win_cont" id="win_cont">
+        <div class="win_info">
+          <span class="close">&times;</span>
+
+          <h2>Congratulations Broooo!</h2>
+
+          <p>You won the game by finding all the correct pairs of cards.</p>
+
+          <img src="smiley.png" alt="Smily Emoji">
+
+          <button class="btn play_again_btn">
+            Play Again ?
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <ul class="deck">
+      
+    </ul>
+
+  </div>
+
+  <script src="https://kit.fontawesome.com/eedbcd0c96.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
